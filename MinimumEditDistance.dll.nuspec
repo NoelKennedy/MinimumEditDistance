@@ -1,7 +1,8 @@
 <?xml version="1.0"?>
-<package >
+<package>
   <metadata>
-    <id>MinimumEditDistance.dll</id>
+    <id>LevenshteinMinimumEditDistance</id>
+		<title>Levenshtein Minimum Edit Distance</title>
     <version>1.0.0</version>
     <authors>Noel Kennedy</authors>
     <owners>Noel Kennedy</owners>
@@ -12,5 +13,6 @@
 		<summary>Calculates the Levenshtein distance between two strings. A count of the number of insertions, deletions and substitutions to make one string into another.</summary>
     <releaseNotes>First release</releaseNotes>
     <copyright>Copyright 2012</copyright>
-    <tags></tags>
+    <tags>Levenshtein distance minimum edit string</tags>
+	</metadata>
 </package>

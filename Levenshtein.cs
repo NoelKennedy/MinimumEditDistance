@@ -2,6 +2,9 @@
 
 namespace MinimumEditDistance {
 
+    /// <summary>
+    /// Holds the Levenshtein distance calculation method
+    /// </summary>
     public static class Levenshtein {
 
         /// <summary>
