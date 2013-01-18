@@ -15,12 +15,26 @@ namespace MinimumEditDistance {
         /// <param name="substitutionCost">int the cost of substituting one letter for another.  Typically 1 or 2</param>
         /// <returns></returns>
         public static int CalculateDistance(string s, string t, int substitutionCost) {
-            var m = s.Length;
-            var n = t.Length;
+            var m = s.Length + 1;
+            var n = t.Length + 1;
+
+            //guard against nulls and empties
+            if(string.IsNullOrEmpty(s)){
+                if (string.IsNullOrEmpty(t))
+                    return 0;
+                return t.Length;
+            }
+
+            if(string.IsNullOrEmpty(t)){
+                if (string.IsNullOrEmpty(s))
+                    return 0;
+                return s.Length;
+            }
 
             int[,] d = new int[m, n];
 
-            //first row + column = distance from empty to other
+         
+            // map empties to each other
             for (int i = 0; i < m; i++) {
                 d[i, 0] = i;
             }
@@ -28,17 +42,18 @@ namespace MinimumEditDistance {
                 d[0, i] = i;
             }
 
-            for (int j = 1; j < n; j++) {
-                for (int i = 1; i < m; i++) {
-                    if (s[i - 1] == t[j - 1]) {
+            
+            for (int i = 1; i < m; i++) {
+                for(int j = 1;j < n; j++) {
+                    if (s[i - 1] == t[j - 1]){
                         d[i, j] = d[i - 1, j - 1]; //no cost, letters the same
-                    } else {
+                    } else
+                    {
                         var delete = d[i - 1, j] + 1;
                         var insert = d[i, j - 1] + 1;
-                        var substitute = d[i - 1, j - 1] + 1;
-                        d[i, j] = Math.Min(delete, Math.Min(insert, substitute));
+                        var substitution = d[i - 1, j - 1] + substitutionCost;
+                        d[i, j] = Math.Min(delete, Math.Min(insert, substitution));
                     }
-
                 }
             }
 

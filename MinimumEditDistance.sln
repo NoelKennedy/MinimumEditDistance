@@ -1,12 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimumEditDistance.net35", "MinimumEditDistance.net35.csproj", "{09F05BCB-E5DD-4A89-BCBE-7006529668AE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimumEditDistance.net35", "MinimumEditDistance\MinimumEditDistance.net35.csproj", "{09F05BCB-E5DD-4A89-BCBE-7006529668AE}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Readme", "Readme", "{3FA54A00-54BB-4081-ADFB-DA5201CB8C12}"
-	ProjectSection(SolutionItems) = preProject
-		License.txt = License.txt
-	EndProjectSection
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimumEditDistance.Tests", "MinimumEditDistance.Tests\MinimumEditDistance.Tests.csproj", "{1FF666E4-F9A8-4CEA-A5F3-79AD7DC1BC66}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,6 +15,10 @@ Global
 		{09F05BCB-E5DD-4A89-BCBE-7006529668AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{09F05BCB-E5DD-4A89-BCBE-7006529668AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{09F05BCB-E5DD-4A89-BCBE-7006529668AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FF666E4-F9A8-4CEA-A5F3-79AD7DC1BC66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FF666E4-F9A8-4CEA-A5F3-79AD7DC1BC66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FF666E4-F9A8-4CEA-A5F3-79AD7DC1BC66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FF666E4-F9A8-4CEA-A5F3-79AD7DC1BC66}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

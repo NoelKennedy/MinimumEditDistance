@@ -32,6 +32,9 @@
     <WarningLevel>4</WarningLevel>
     <DocumentationFile>bin\Release\MinimumEditDistance.XML</DocumentationFile>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
