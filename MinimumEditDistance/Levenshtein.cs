@@ -32,7 +32,7 @@ namespace MinimumEditDistance {
         }
 
         /// <summary>
-        /// Calculates the Levenshtein minimum edit distance from one string to another
+        /// Calculates the Levenshtein minimum edit distance from one string to another -> optionally uses a MemoryStructure for the algo of your choice
         /// </summary>
         /// <param name="s"></param>
         /// <param name="t"></param>
